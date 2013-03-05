@@ -1,0 +1,4 @@
+﻿@model Website.Models.SocialConnectConnector
+<a href="@Url.RouteUrl("SocialConnectedLogin", new { NetworkName = Model.NetworkName })" rel="nofollow">
+    <img src="/sitecore/shell/Themes/Standard/Custom/16x16/@(Model.NetworkDisplayName).png" title="@Model.LoginText" />
+</a>

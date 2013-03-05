@@ -1,0 +1,22 @@
+﻿<div style="float: right;" runat="server" id="TButton">
+    <a href="http://twitter.com/share" data-url="@ViewBag.CampaignQueryString" data-counturl="@ViewBag.SharePageUrl" class="twitter-share-button" data-count="horizontal">
+        @ViewBag.TweetText
+    </a>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script>
+        twttr.events.bind('tweet', function (event) {
+            {
+                var url = '@ViewBag.EventUrl?itemid=@ViewBag.ItemId&eventname=@ViewBag.EventName&goalname=@ViewBag.GoalName';
+                var xmlhttp;
+                if (window.XMLHttpRequest){
+                    xmlhttp=new XMLHttpRequest();
+                }
+                else{
+                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send();
+            }
+        });
+    </script>
+</div>
