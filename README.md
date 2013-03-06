@@ -3,7 +3,7 @@
 This project is a demonstration of how the Sitecore Social Connected module can be made to work with Sitecore MVC.
 
 Besides the basic conversion form Webforms to MVC there
- is an emphesis on demonstrating refactoring, abstractions and unit testing.
+ is an emphasis on demonstrating refactoring, abstractions and unit testing.
 
 ## Building
 
@@ -18,7 +18,7 @@ The package contains Rendering Definitions for the UI components.
 
 Examples of using the Sitecore MVC Connector Rendering inline:
 
-    // The NetworkName could also be set as a RenderingParameter if added via item layout configuration. What a wonderful inline GUID :)
+    // The NetworkName could also be set as a Rendering Parameter if added via item layout configuration. What a wonderful inline GUID :)
 	@Html.Sitecore().Rendering("{853B9105-DD1C-4163-882E-E5BB8925D87F}", new { Parameters = "NetworkName=Facebook" })
 
 ## Contact
